@@ -1,0 +1,15 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Landing page for advance css course",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass ./starter/sass/main.scss ./starter/css/style.css -w"
+  },
+  "author": "Cassie",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  },
+  "dependencies": {}
+}
