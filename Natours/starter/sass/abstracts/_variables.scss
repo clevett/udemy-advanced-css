@@ -2,12 +2,19 @@ $primary: #55c57a;
 $secondary: #7ed56f;
 $accent: #28b485;
 
+$accent2-light: #ffb900;
+$accent2-dark: #ff7730;
+
+$accent3-light: #2998ff;
+$accent3-dark: #5643fa;
+
 $text-secondary: #777;
 
 $bg-light: #f7f7f7;
 
 $white: #FFF;
 $black: #000;
+$gray-light: #eee;
 
 //GRID
 $grid-width: 114rem;
@@ -16,3 +23,6 @@ $gutter-horizontal: 6rem;
 
 //FONT
 $default-font-size: 1.6rem;
+
+//Box Shadows
+$shadow: 0 1.5rem 4rem rgba($black, .15);
