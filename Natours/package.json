@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass ./starter/sass/main.scss ./starter/css/style.css -w",
-    "compile:sass": "node-sass ./starter/sass/main.scss ./starter/css/style.comp.css"
+    "compile:sass": "node-sass ./starter/sass/main.scss ./starter/css/style.comp.css",
+    "devserver": "live-server",
+    "start":"npm-run-all --parallel devserver watch:sass"
   },
   "author": "Cassie",
   "license": "ISC",
