@@ -4,7 +4,8 @@
   "description": "Landing page for advance css course",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass ./starter/sass/main.scss ./starter/css/style.css -w"
+    "watch:sass": "node-sass ./starter/sass/main.scss ./starter/css/style.css -w",
+    "compile:sass": "node-sass ./starter/sass/main.scss ./starter/css/style.comp.css"
   },
   "author": "Cassie",
   "license": "ISC",

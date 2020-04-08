@@ -4,12 +4,32 @@
         to right bottom,
         rgba($secondary, 0.8), 
         rgba($accent, 0.8)), 
-    url(../img/hero.jpg);
+    url(../img/hero-small.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
 
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
+
+		@media (min-resolution: 192dpi) and (min-width: 600px) {
+			background-image: linear-gradient(
+					to right bottom,
+					rgba($secondary, 0.8), 
+					rgba($accent, 0.8)), 
+			url(../img/hero.jpg);
+		}
+
+		@media (min-width: 2000px) {
+			background-image: linear-gradient(
+					to right bottom,
+					rgba($secondary, 0.8), 
+					rgba($accent, 0.8)), 
+			url(../img/hero.jpg);
+		}
+
+    @include  respond(phone) {
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0% 100%);
+    }
 
     &__logo-box {
         position: absolute;
@@ -37,14 +57,14 @@
     backface-visibility: hidden;
 
     &--main {
-        display: block;
-        font-size: 6rem;
-        font-weight: 400;
-        letter-spacing: 35px;
+      display: block;
+      font-size: 6rem;
+      font-weight: 400;
+      letter-spacing: 35px;
     
-        animation: moveInLeft 1s ease-out;
+			animation: moveInLeft 1s ease-out;
     }
-    
+
     &--sub {
         display: block;
         font-size: 2rem;
